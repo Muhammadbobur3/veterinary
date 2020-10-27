@@ -80,7 +80,9 @@ only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
-
+  .site-main__services--intro-section {
+    background-image: url("../img/toti-poti@2x.png");
+  }
 }
 
 .site-header__top {
@@ -1134,4 +1136,149 @@ only screen and (                min-resolution: 2dppx) {
   text-align: right;
   color: #333333;
   text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* SERVICES-HTML OF CSS */
+
+.site-main__services--intro-section {
+  background-image: url("../img/toti-poti.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 470px) center;
+  background-size: auto;
+  padding-top: 110px;
+  padding-bottom: 139px;
+}
+
+.services--intro-section__paragraph {
+  width: 472px;
+  margin-left: 130px;
+}
+
+.services--intro-section__title {
+  margin: 0;
+  margin-bottom: 21px;
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 64px;
+  color: #333333;
+}
+
+.services--intro-section__text {
+  margin: 0;
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.site-main__our-services {
+  padding-bottom: 168px;
+}
+
+.our-services__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.our-services__item {
+  width: 305px;
+  padding: 53px 45px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 29px;
+  margin-bottom: 32px;
+  background-image: url("../img/pet.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 107px 94px;
+  transition: all 0.3s ease;
+}
+
+.our-services__item:hover {
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.2));
+}
+
+.our-services__item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.our-services-item__link {
+  width: 156px;
+  padding: 14px 30px;
+  border-radius: 3px;
+  display: block;
+  background-color: #78C0DE;
+  text-decoration: none;
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: auto;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.our-services__item:nth-child(even) .our-services-item__link {
+  background-color: #FFBD54;
+}
+
+.our-services__item .our-services-item__link:hover {
+  background-color: black;
+}
+
+.our-services-item__title {
+  margin: 0;
+  margin-bottom: 14px;
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 34px;
+  color: #333333;
+}
+
+.our-services__item::before {
+  content: "";
+  display: block;
+  background-image: url("../img/doctor.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  width: 86px;
+  height: 78px;
+  margin-bottom: 21px;
+}
+
+.our-services-item__text {
+  margin: 0;
+  margin-bottom: 26px;
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #949494;
 }
